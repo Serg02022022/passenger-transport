@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ежедневные рейсы — Сергей</title>
+    <style>
+        body {
+            background: #0a0a0a url('https://284baef4-3d14-4ca5-8247-4811f0d6b14b.selstorage.ru/194a9177-b371-4a33-ab79-43df1216f414_Vizitka.jpg') no-repeat center center fixed;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(0,0,0,0.7);
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px #000;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .contacts {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .contacts span {
+            display: block;
+        }
+        .messengers {
+            margin: 20px 0 10px 0;
+            display: flex;
+            gap: 20px;
+        }
+        .messenger-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #222;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            color: #fff;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: background 0.2s;
+            box-shadow: 0 2px 8px #0006;
+        }
+        .messenger-btn:hover { opacity: 0.85; }
+        .messenger-whatsapp { background: #25D366; color: #fff; }
+        .messenger-telegram { background: #229ED9; color: #fff; }
+        .messenger-viber { background: #7360F2; color: #fff; }
+        .messenger-btn img {
+            width: 24px;
+            height: 24px;
+        }
+        .schedule {
+            margin-top: 30px;
+            font-size: 1.15em;
+        }
+        .qr-all {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 35px 0 0 0;
+            flex-wrap: wrap;
+        }
+        .qr-block {
+            text-align: center;
+            background: rgba(30,30,30,0.85);
+            border-radius: 14px;
+            padding: 15px 12px 10px 12px;
+            box-shadow: 0 2px 10px #0007;
+            margin-bottom: 10px;
+        }
+        .qr-block img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 8px;
+        }
+        .qr-block span {
+            display: block;
+            font-size: 1em;
+            color: #ccc;
+        }
+        @media (max-width: 900px) {
+            .qr-all { gap: 16px; }
+            .qr-block img { width: 90px; height: 90px; }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            .contacts, .schedule {
+                font-size: 1em;
+            }
+            .messengers {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .qr-all {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ежедневные рейсы</h1>
+        <div class="contacts">
+            <strong>ЗАКАЗ БИЛЕТОВ ОНЛАЙН</strong>
+            <div class="messengers">
+                <a class="messenger-btn messenger-whatsapp" href="https://wa.me/79065044020" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+                    WhatsApp
+                </a>
+                <a class="messenger-btn messenger-telegram" href="https://t.me/+79065044020" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+                    Telegram
+                </a>
+                <a class="messenger-btn messenger-viber" href="viber://chat?number=+79065044020" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/viber.svg" alt="Viber">
+                    Viber
+                </a>
+            </div>
+            <span style="font-size:1.4em; margin:10px 0;">8 906 504 40 20</span>
+            <span>Сергей</span>
+        </div>
+        <div class="schedule">
+            <ul>
+                <li>Отправление из Новозыбкова от Ж/Д вокзала в 21:00</li>
+                <li>Отправление из Клинцов от ЦУМа (ул. Октябрьская д. 25) в 21:40</li>
+                <li>Отправление из Почепа от кафе «Русский Двор» в 23:00</li>
+                <li>Прибытие в Москву на АВ Саларьево (метро Саларьево) в 05:30</li>
+                <li>Отправление из Москвы от АВ Саларьево (метро Саларьево) в 11:00</li>
+                <li>Отправление из Москвы в 08:45 — 1, 6, 11, 16, 21 и 26 каждого месяца</li>
+            </ul>
+        </div>
+        <div class="qr-all">
+            <div class="qr-block">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/79065044020" alt="QR WhatsApp">
+                <span>WhatsApp</span>
+            </div>
+            <div class="qr-block">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://t.me/+79065044020" alt="QR Telegram">
+                <span>Telegram</span>
+            </div>
+            <div class="qr-block">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=viber://chat?number=+79065044020" alt="QR Viber">
+                <span>Viber</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
